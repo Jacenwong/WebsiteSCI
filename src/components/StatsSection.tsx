@@ -89,9 +89,9 @@ export const StatsSection = () => {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'scale(1.05) translateY(-8px)';
-                e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(37, 99, 235, 0.25)';
-                e.currentTarget.style.borderColor = 'rgba(37, 99, 235, 0.4)';
-                e.currentTarget.style.backgroundColor = 'rgba(37, 99, 235, 0.08)';
+                e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(21, 128, 61, 0.25)';
+                e.currentTarget.style.borderColor = 'rgba(21, 128, 61, 0.4)';
+                e.currentTarget.style.backgroundColor = 'rgba(21, 128, 61, 0.08)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'scale(1) translateY(0)';
@@ -100,8 +100,8 @@ export const StatsSection = () => {
                 e.currentTarget.style.backgroundColor = 'rgba(34, 197, 94, 0.02)';
               }}
             >
-              <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-blue-600 dark:text-blue-400 mx-auto mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-110" />
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2 transition-colors duration-300 group-hover:text-blue-500 dark:group-hover:text-blue-300">71%</div>
+              <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-green-700 dark:text-green-300 mx-auto mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700 dark:text-green-300 mb-2 transition-colors duration-300 group-hover:text-green-600 dark:group-hover:text-green-200">71%</div>
               <div className="text-sm sm:text-base md:text-lg text-muted-foreground transition-colors duration-300 group-hover:text-foreground">Experience Depression</div>
               <div className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2 transition-colors duration-300 group-hover:text-foreground/80">Post-treatment</div>
             </div>
@@ -122,9 +122,9 @@ export const StatsSection = () => {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'scale(1.05) translateY(-8px)';
-                e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(147, 51, 234, 0.25)';
-                e.currentTarget.style.borderColor = 'rgba(147, 51, 234, 0.4)';
-                e.currentTarget.style.backgroundColor = 'rgba(147, 51, 234, 0.08)';
+                e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(21, 128, 61, 0.25)';
+                e.currentTarget.style.borderColor = 'rgba(21, 128, 61, 0.4)';
+                e.currentTarget.style.backgroundColor = 'rgba(21, 128, 61, 0.08)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'scale(1) translateY(0)';
@@ -133,8 +133,8 @@ export const StatsSection = () => {
                 e.currentTarget.style.backgroundColor = 'rgba(34, 197, 94, 0.02)';
               }}
             >
-              <Award className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-purple-600 dark:text-purple-400 mx-auto mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-110" />
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2 transition-colors duration-300 group-hover:text-purple-500 dark:group-hover:text-purple-300">#1</div>
+              <Award className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-green-700 dark:text-green-300 mx-auto mb-3 sm:mb-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700 dark:text-green-300 mb-2 transition-colors duration-300 group-hover:text-green-600 dark:group-hover:text-green-200">#1</div>
               <div className="text-sm sm:text-base md:text-lg text-muted-foreground transition-colors duration-300 group-hover:text-foreground">Leading Cause</div>
               <div className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2 transition-colors duration-300 group-hover:text-foreground/80">Of disability in US</div>
             </div>
