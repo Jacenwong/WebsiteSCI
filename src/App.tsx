@@ -10,8 +10,8 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // Use base path for GitHub Pages in production, root path for development
-  const basename = import.meta.env.PROD ? "/JacenWebsiteEdition" : "";
+  // Use root path for custom domain, no base path needed
+  const basename = "";
 
   return (
     <ThemeProvider>
