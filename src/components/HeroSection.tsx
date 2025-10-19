@@ -119,7 +119,9 @@ export const HeroSection = () => {
       // True infinite scroll - resets every cycle for seamless loop
       const translateX = -progress * singleSetWidth;
       
-      carousel.style.transform = `translateX(${translateX}px)`;
+      if (carousel) {
+        carousel.style.transform = `translateX(${translateX}px)`;
+      }
       
       // Always continue animation - never stops
       animationId = requestAnimationFrame(animate);
