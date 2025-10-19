@@ -34,8 +34,10 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Copy .nojekyll to dist
-        run: cp public/.nojekyll dist/ || echo "No .nojekyll file to copy"
+      - name: Copy .nojekyll and _headers to dist
+        run: |
+          cp public/.nojekyll dist/ || echo "No .nojekyll file to copy"
+          cp public/_headers dist/ || echo "No _headers file to copy"
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
