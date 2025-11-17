@@ -7,38 +7,43 @@ import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
+import { useRef } from "react";
+
 const Index = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="relative">
-      <Navigation />
-      
-      {/* Enhanced Scrolling Experience */}
-      <main className="fixed-scroll-container">
-        <section className="scroll-card">
+      {/* Attach scrollRef here */}
+      <Navigation containerRef={scrollRef} />
+
+      {/* Scroll container must receive the same ref */}
+      <main ref={scrollRef} className="fixed-scroll-container">
+        <section id="product" className="scroll-card">
           <HeroSection />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="stats" className="scroll-card">
           <StatsSection />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="showcase" className="scroll-card">
           <ProductShowcase />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="technology" className="scroll-card">
           <TechnologySection />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="about" className="scroll-card">
           <AboutSection />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="contact" className="scroll-card">
           <ContactSection />
         </section>
-        
-        <section className="scroll-card">
+
+        <section id="footer" className="scroll-card">
           <Footer />
         </section>
       </main>
