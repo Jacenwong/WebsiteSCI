@@ -10,8 +10,8 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // Use root path for custom domain, no base path needed
-  const basename = "";
+  // Use Vite's BASE_URL to match the base path configuration
+  const basename = import.meta.env.BASE_URL;
 
   return (
     <ThemeProvider>
