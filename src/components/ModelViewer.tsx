@@ -75,7 +75,7 @@ export const ModelViewer = () => {
     // Load the GLB/GLTF model
     const loader = new GLTFLoader();
     loader.load(
-      `${import.meta.env.BASE_URL}SecondArmModel1.glb`, // Try GLB first
+      `${import.meta.env.BASE_URL}ReboModel1.glb`, // Try GLB first
       (gltf) => {
         console.log('✅ GLB Model loaded successfully:', gltf);
         const model = gltf.scene;
@@ -191,7 +191,7 @@ export const ModelViewer = () => {
         // Try GLTF file as fallback
         console.log('Trying GLTF file as fallback...');
         loader.load(
-          '/SecondArmModel1.gltf',
+          '/ReboModel1.gltf',
           (gltf) => {
             console.log('✅ GLTF Model loaded successfully:', gltf);
             const model = gltf.scene;

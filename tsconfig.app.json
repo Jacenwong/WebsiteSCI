@@ -13,6 +13,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    
+    /* Performance optimizations */
+    "incremental": true, // Enable incremental compilation
+    "tsBuildInfoFile": ".tsbuildinfo", // Cache build info
 
     /* Linting */
     "strict": false,

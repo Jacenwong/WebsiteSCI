@@ -14,7 +14,7 @@ export const deviceSections: Section[] = [
     camPos: [0, 1.5, 6],
     lookAt: [0, 0, 0],
     labelPos: [0, 1.2, 0],
-    title: "Second-Arm Device",
+    title: "Rebo Device",
     body: "Revolutionary stroke rehabilitation device that provides 10-15 lbs of lift capacity with EMG sensor integration for personalized assistance."
   },
   {

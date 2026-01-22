@@ -81,7 +81,7 @@ export default {
         'bounce': 'var(--transition-bounce)',
       },
       fontFamily: {
-        sans: ['Oswald', 'system-ui', 'sans-serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

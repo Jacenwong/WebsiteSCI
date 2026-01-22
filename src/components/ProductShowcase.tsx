@@ -75,12 +75,12 @@ export const ProductShowcase = () => {
   return (
     <section 
       id="product" 
-      className="min-h-screen w-full bg-background relative transition-all duration-1000 ease-in-out flex items-center justify-center py-16"
+      className="min-h-screen w-full bg-background relative transition-all duration-1000 ease-in-out py-16"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-        <div className="container mx-auto px-4 sm:px-6 flex flex-col justify-center">
+        <div className="container mx-auto px-4 sm:px-6 flex flex-col">
         {/* Title and Description */}
         <motion.div 
           className="text-center mb-8 sm:mb-10 md:mb-12"
@@ -97,6 +97,33 @@ export const ProductShowcase = () => {
             and provides safe, stable support for daily activities.
           </p>
         </motion.div>
+
+        {/* Hero Shot Image */}
+        <div className="w-full mb-8 sm:mb-10 md:mb-12 relative z-10" style={{ minHeight: '300px' }}>
+          <div className="flex justify-center items-center w-full">
+            <img 
+              src={`${import.meta.env.BASE_URL}SCIHeroShot.png`}
+              alt="Second-Arm SCI Hero Shot" 
+              className="w-1/2 md:w-full max-w-4xl object-contain"
+              style={{ 
+                display: 'block',
+                maxWidth: '100%',
+                height: 'auto'
+              }}
+              onError={(e) => {
+                console.error('❌ Failed to load SCIHeroShot.png');
+                console.error('Path attempted:', `${import.meta.env.BASE_URL}SCIHeroShot.png`);
+                console.error('BASE_URL:', import.meta.env.BASE_URL);
+                // Show a placeholder if image fails
+                e.currentTarget.style.border = '2px solid red';
+                e.currentTarget.style.backgroundColor = '#ffcccc';
+              }}
+              onLoad={() => {
+                console.log('✅ SCIHeroShot.png loaded successfully');
+              }}
+            />
+          </div>
+        </div>
 
         {/* WIP 3D Project - 3D Model - COMMENTED OUT FOR LATER WORK */}
         {/* <div className="relative w-full h-[70vh]">
@@ -134,37 +161,32 @@ export const ProductShowcase = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            {/* SCI Hero Shot Image */}
+            {/* 2D Design Image */}
             <motion.div 
-              className="mb-8 flex justify-center items-center w-full overflow-visible"
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 2 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mb-8 flex justify-center items-center w-full"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 2.2 }}
-              whileTap={{ scale: 1.9 }}
             >
-              <img 
-                src={`${import.meta.env.BASE_URL}SCIHeroShot.png`}
-                alt="Second-Arm SCI Hero Shot" 
-                className="block"
-                style={{ 
-                  background: 'transparent',
-                  display: 'block',
-                  width: 'auto',
-                  height: 'auto',
-                  maxWidth: 'none',
-                  maxHeight: 'none',
-                  transformOrigin: 'center center'
-                }}
-                onError={(e) => {
-                  console.log('SCIHeroShot image failed to load:', e);
-                  e.currentTarget.style.display = 'none';
-                }}
-                onLoad={() => {
-                  console.log('SCIHeroShot image loaded successfully');
-                }}
-              />
+              <div className="w-full max-w-[665px] sm:max-w-[430px] md:max-w-[717px] lg:max-w-[1003px] xl:max-w-[1432px]">
+                <img 
+                  src={`${import.meta.env.BASE_URL}2D Model.png`}
+                  alt="Second-Arm 2D Model" 
+                  className="w-full h-auto object-contain"
+                  style={{ 
+                    background: 'transparent',
+                    display: 'block'
+                  }}
+                  onError={(e) => {
+                    console.log('Image failed to load:', e);
+                    e.currentTarget.style.display = 'none';
+                  }}
+                  onLoad={() => {
+                    console.log('2D Model image loaded successfully');
+                  }}
+                />
+              </div>
             </motion.div>
             
           </motion.div>

@@ -8,7 +8,7 @@ export const ProductShowcase3D = () => {
             Product <span className="bg-gradient-primary bg-clip-text text-transparent">Showcase</span>
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Discover the innovative features and capabilities of our Second-Arm device.
+            Discover the innovative features and capabilities of our Rebo device.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">

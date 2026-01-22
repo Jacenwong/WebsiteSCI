@@ -182,25 +182,31 @@ export const HeroSection = () => {
                {/* Headline */}
                <motion.h1
                  className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight relative z-[200] flex flex-col sm:flex-row items-center justify-center py-12 mb-0 mt-16"
-                 style={{ fontFamily: 'Hammersmith One, sans-serif' }}
                  initial={{ opacity: 0, y: 40 }}
                  animate={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 1, delay: 0.4 }}
+                 transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
                >
-                 <span style={{ color: '#006d8f' }}>Reimagining</span> 
+                 <motion.span 
+                   style={{ color: '#006d8f' }}
+                   initial={{ opacity: 0, y: 40 }}
+                   animate={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                 >
+                   Reimagining
+                 </motion.span> 
                  <motion.span 
                    className="mt-1 sm:mt-0 sm:ml-4"
                    style={{ 
                      color: '#006d8f', 
                    }}
-                   initial={{ opacity: 0, scale: 0.8 }}
+                   initial={{ opacity: 0, y: 40 }}
                    animate={{ 
                      opacity: 1, 
-                     scale: 1
+                     y: 0
                    }}
                    transition={{ 
-                     duration: 1.2, 
-                     delay: 1.2,
+                     duration: 1, 
+                     delay: 0.6,
                      ease: "easeOut"
                    }}
                  >
@@ -211,7 +217,7 @@ export const HeroSection = () => {
                {/* Subtitle */}
                <motion.p
                  className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto relative z-[100] px-4 -mt-4"
-                 style={{ fontFamily: 'Banshrift, sans-serif', fontWeight: 300 }}
+                 style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, sans-serif', fontWeight: 300 }}
                  initial={{ opacity: 0, y: 30 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 1, delay: 0.6 }}
